@@ -1,0 +1,33 @@
+---
+import ProjectCard from "./ProjectCard.astro";
+import { PROJECTS } from "../config";
+---
+
+<section id="projects" class="py-20 bg-gray-50 dark:bg-gray-950">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-bold mb-4 dark:text-white">
+                Proyectos <span class="text-green-600">Reales</span>
+            </h2>
+            <p class="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+                Resultados tangibles: Automatización que ahorra tiempo y webs
+                que atraen clientes.
+            </p>
+        </div>
+
+        <div class="flex flex-col space-y-8 md:space-y-16">
+            {
+                PROJECTS.map((project) => (
+                    <ProjectCard
+                        title={project.title}
+                        description={project.description}
+                        tags={project.tags}
+                        link={project.link}
+                        image={project.image}
+                        details={project.details}
+                    />
+                ))
+            }
+        </div>
+    </div>
+</section>

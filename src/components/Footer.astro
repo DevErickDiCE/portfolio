@@ -1,0 +1,55 @@
+---
+import { SITE_CONFIG } from "../config";
+---
+
+<footer class="bg-gray-950 pt-0 pb-8">
+    <div class="container mx-auto px-6 flex flex-col items-center gap-8">
+        <!-- Estado profesional -->
+        <div
+            class="flex items-center gap-3 bg-white/5 py-1.5 px-4 rounded-full border border-white/5"
+        >
+            <span
+                class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]"
+            ></span>
+            <span class="text-gray-300 text-sm font-medium tracking-wide">
+                Disponible para nuevos proyectos
+            </span>
+        </div>
+
+        <!-- Contacto principal -->
+        <div
+            class="flex items-center gap-8 text-white/90 font-medium text-lg tracking-wide"
+        >
+            <a
+                href={`mailto:${SITE_CONFIG.email}`}
+                class="hover:text-white transition-colors duration-300 border-b border-transparent hover:border-white/40 pb-0.5"
+            >
+                Email
+            </a>
+            <span class="text-white/20">/</span>
+            <a
+                href="#"
+                class="hover:text-white transition-colors duration-300 border-b border-transparent hover:border-white/40 pb-0.5"
+            >
+                LinkedIn
+            </a>
+            <span class="text-white/20">/</span>
+            <a
+                href={`https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(SITE_CONFIG.whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hover:text-white transition-colors duration-300 border-b border-transparent hover:border-white/40 pb-0.5"
+            >
+                WhatsApp
+            </a>
+        </div>
+
+        <!-- Texto legal -->
+        <p
+            class="text-gray-600/60 text-xs font-medium tracking-widest mt-4 uppercase"
+        >
+            &copy; {new Date().getFullYear()}
+            {SITE_CONFIG.author} — Desarrollo web
+        </p>
+    </div>
+</footer>

@@ -1,0 +1,183 @@
+---
+import { SITE_CONFIG } from "../config";
+import profileImg from "../assets/avatar.png";
+---
+
+<section
+    class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gray-900 text-white selection:bg-green-500/30"
+>
+    <!-- Ambient Background -->
+    <div class="absolute inset-0 z-0">
+        <!-- Noise Texture -->
+        <div
+            class="absolute inset-0 opacity-[0.03] pointer-events-none"
+            style="background-image: url('data:image/svg+xml,%3Csvg viewBox=%220 0 200 200%22 xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter id=%22noiseFilter%22%3E%3CfeTurbulence type=%22fractalNoise%22 baseFrequency=%220.65%22 numOctaves=%223%22 stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23noiseFilter)%22/%3E%3C/svg%3E');"
+        >
+        </div>
+
+        <!-- Subtle Gradient Orbs -->
+        <div
+            class="absolute top-[-10%] left-[-10%] w-[40rem] h-[40rem] bg-green-900/20 rounded-full blur-[100px] animate-pulse-slow"
+        >
+        </div>
+        <div
+            class="absolute bottom-[-10%] right-[-10%] w-[40rem] h-[40rem] bg-emerald-900/10 rounded-full blur-[100px] animate-pulse-slow delay-1000"
+        >
+        </div>
+    </div>
+
+    <div class="container mx-auto px-6 relative z-10">
+        <div
+            class="flex flex-col md:flex-row items-center justify-center gap-12 md:gap-20"
+        >
+            <!-- Avatar Section -->
+            <div class="relative group order-first md:order-last">
+                <!-- Soft Glow Halo -->
+                <div
+                    class="absolute inset-0 bg-gradient-to-tr from-green-500/20 to-emerald-500/20 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-700 opacity-60"
+                >
+                </div>
+
+                <!-- Image Container -->
+                <div
+                    class="relative w-56 h-56 md:w-72 md:h-72 rounded-full p-2 border border-white/5 bg-white/5 backdrop-blur-sm"
+                >
+                    <img
+                        src={profileImg.src}
+                        alt={SITE_CONFIG.author}
+                        class="w-full h-full rounded-full object-cover grayscale-[20%] group-hover:grayscale-0 transition-all duration-700 shadow-2xl"
+                    />
+                </div>
+            </div>
+
+            <!-- Content Section -->
+            <div class="text-center md:text-left max-w-2xl">
+                <!-- Badge -->
+                <div
+                    class="inline-flex items-center gap-2 px-3 py-1 mb-6 rounded-full bg-white/5 border border-white/10 backdrop-blur-md"
+                >
+                    <span
+                        class="w-2 h-2 rounded-full bg-green-500 animate-pulse"
+                    ></span>
+                    <span
+                        class="text-xs font-medium tracking-widest text-green-400 uppercase"
+                        >Disponible para proyectos</span
+                    >
+                </div>
+
+                <!-- Main Typography -->
+                <h1
+                    class="text-5xl md:text-7xl font-bold tracking-tight mb-5 leading-[1.1]"
+                >
+                    <span
+                        class="block text-gray-400 font-light text-3xl md:text-4xl mb-2"
+                        >Hola, soy</span
+                    >
+                    <span class="text-white">Erick Piñerua</span>
+                </h1>
+
+                <p
+                    class="text-lg text-gray-400 font-light leading-relaxed mb-8 max-w-lg mx-auto md:mx-0"
+                >
+                    Ayudo a negocios a convertir su web en una herramienta real
+                    de trabajo, integrando desarrollo web, hosting y
+                    automatización inteligente.
+                </p>
+
+                <!-- Actions -->
+                <div class="flex flex-col sm:flex-row items-center gap-6">
+                    <a
+                        href="#contact"
+                        class="group relative px-6 py-3 bg-green-600 overflow-hidden rounded-lg font-medium text-white shadow-lg shadow-green-900/20 transition-all hover:shadow-green-900/40 hover:-translate-y-0.5 text-sm md:text-base"
+                    >
+                        <span class="relative z-10">Iniciar Proyecto</span>
+                        <div
+                            class="absolute inset-0 h-full w-full scale-0 rounded-lg transition-all duration-300 group-hover:scale-100 group-hover:bg-green-500"
+                        >
+                        </div>
+                    </a>
+
+                    <a
+                        href={`https://wa.me/${SITE_CONFIG.whatsapp}?text=${encodeURIComponent(SITE_CONFIG.whatsappMessage)}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="hidden md:inline-flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm font-medium group"
+                    >
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="group-hover:text-green-400 transition-colors"
+                        >
+                            <path d="M3 21l1.65-3.8a9 9 0 1 1 3.4 2.9l-5.05 .9"
+                            ></path>
+                            <path
+                                d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1"
+                            ></path>
+                        </svg>
+                        Hablar por WhatsApp
+                    </a>
+                </div>
+
+                <!-- Stack Indicators -->
+                <div
+                    class="mt-16 pt-8 border-t border-white/5 flex flex-col gap-4 text-center md:text-left"
+                >
+                    <p
+                        class="text-sm text-gray-500 font-mono tracking-wider uppercase"
+                    >
+                        Tecnologías con las que trabajo
+                    </p>
+
+                    <div class="space-y-2">
+                        <p class="text-xl md:text-2xl font-light text-gray-200">
+                            Desarrollo Web <span class="text-green-500/50 mx-2"
+                                >·</span
+                            > Hosting <span class="text-green-500/50 mx-2"
+                                >·</span
+                            > Automatización
+                        </p>
+
+                        <p class="text-base md:text-lg text-gray-400 font-mono">
+                            HTML <span class="text-gray-600 mx-1">·</span>
+                            CSS <span class="text-gray-600 mx-1">·</span>
+                            JavaScript <span class="text-gray-600 mx-1">·</span>
+                            WordPress <span class="text-gray-600 mx-1">·</span>
+                            Astro <span class="text-gray-600 mx-1">·</span>
+                            Python <span class="text-gray-600 mx-1">·</span>
+                            n8n
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Fade -->
+    <div
+        class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-gray-900 to-transparent pointer-events-none"
+    >
+    </div>
+</section>
+
+<style>
+    .animate-pulse-slow {
+        animation: pulse 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+
+    @keyframes pulse {
+        0%,
+        100% {
+            opacity: 0.2;
+        }
+        50% {
+            opacity: 0.5;
+        }
+    }
+</style>

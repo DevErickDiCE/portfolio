@@ -1,0 +1,123 @@
+---
+interface Props {
+    title: string;
+    description: string;
+    image: string;
+    tags: string[];
+    link?: string;
+    details?: {
+        problem: string;
+        solution: string;
+        result: string;
+    };
+    class?: string;
+}
+
+const {
+    title,
+    description,
+    image,
+    tags,
+    link = "#",
+    details,
+    class: className,
+} = Astro.props;
+---
+
+<article
+    class={`grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-start py-12 border-b border-white/5 ${className}`}
+>
+    <!-- Text Content (Left) -->
+    <div class="order-2 md:order-1 flex flex-col justify-center h-full">
+        <!-- Tags (Minimal Ficha) -->
+        <div class="flex flex-wrap gap-3 mb-4">
+            {
+                tags.map((tag) => (
+                    <span class="text-[10px] font-mono text-gray-500 uppercase tracking-wider">
+                        [{tag}]
+                    </span>
+                ))
+            }
+        </div>
+
+        <!-- Title -->
+        <h3 class="text-2xl md:text-3xl font-light text-white mb-4">
+            {title}
+        </h3>
+
+        <!-- Description -->
+        <p
+            class="text-gray-500 text-base font-light leading-relaxed max-w-lg line-clamp-2 mb-8"
+        >
+            {description}
+        </p>
+
+        <!-- Expandable Case Study -->
+        {
+            details && (
+                <details class="group">
+                    <summary class="list-none cursor-pointer flex items-center text-white font-mono text-sm hover:text-green-400 transition-colors select-none">
+                        <span class="mr-4">Ver Caso de Estudio</span>
+                        <svg
+                            class="w-5 h-5 transition-transform duration-300 group-open:rotate-90"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="1.5"
+                        >
+                            <path d="M5 12h14" />
+                            <path d="M12 5l7 7-7 7" />
+                        </svg>
+                    </summary>
+
+                    <div class="mt-8 pl-4 border-l border-white/10 space-y-6 text-sm animate-in slide-in-from-top-4 fade-in duration-300">
+                        <div>
+                            <p class="font-mono text-gray-500 text-xs uppercase mb-1">
+                                El Problema
+                            </p>
+                            <p class="text-gray-300 font-light leading-relaxed">
+                                {details.problem}
+                            </p>
+                        </div>
+                        <div>
+                            <p class="font-mono text-gray-500 text-xs uppercase mb-1">
+                                La Solución
+                            </p>
+                            <p class="text-gray-300 font-light leading-relaxed">
+                                {details.solution}
+                            </p>
+                        </div>
+                        <div>
+                            <p class="font-mono text-gray-500 text-xs uppercase mb-1">
+                                El Resultado
+                            </p>
+                            <p class="text-green-400 font-light leading-relaxed">
+                                {details.result}
+                            </p>
+                        </div>
+
+                        <div class="pt-4">
+                            <a
+                                href="#contact"
+                                class="inline-flex items-center text-green-400 hover:text-green-300 transition-colors text-sm font-medium"
+                            >
+                                -> Quiero algo similar
+                            </a>
+                        </div>
+                    </div>
+                </details>
+            )
+        }
+    </div>
+
+    <!-- Image (Right) -->
+    <div
+        class="order-1 md:order-2 overflow-hidden rounded-xl bg-gray-900 shadow-2xl"
+    >
+        <img
+            src={image}
+            alt={title}
+            class="w-full h-auto object-cover transform transition-transform duration-700 hover:scale-105 opacity-80 hover:opacity-100 grayscale hover:grayscale-0"
+        />
+    </div>
+</article>
