@@ -4,7 +4,7 @@ import profileImg from "../assets/avatar.png";
 ---
 
 <section
-    class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gray-900 text-white selection:bg-green-500/30"
+    class="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gray-900 text-white selection:bg-green-500/30 pt-32 md:pt-0"
 >
     <!-- Ambient Background -->
     <div class="absolute inset-0 z-0">
@@ -135,8 +135,10 @@ import profileImg from "../assets/avatar.png";
                         Tecnologías con las que trabajo
                     </p>
 
-                    <div class="space-y-2">
-                        <p class="text-xl md:text-2xl font-light text-gray-200">
+                    <div class="space-y-6 md:space-y-2">
+                        <p
+                            class="text-xl md:text-2xl font-light text-gray-200 leading-relaxed md:leading-normal"
+                        >
                             Desarrollo Web <span class="text-green-500/50 mx-2"
                                 >·</span
                             > Hosting <span class="text-green-500/50 mx-2"
@@ -144,7 +146,10 @@ import profileImg from "../assets/avatar.png";
                             > Automatización
                         </p>
 
-                        <p class="text-base md:text-lg text-gray-400 font-mono">
+                        <!-- Desktop view (original text stream) -->
+                        <p
+                            class="hidden md:block text-lg text-gray-400 font-mono"
+                        >
                             HTML <span class="text-gray-600 mx-1">·</span>
                             CSS <span class="text-gray-600 mx-1">·</span>
                             JavaScript <span class="text-gray-600 mx-1">·</span>
@@ -153,6 +158,25 @@ import profileImg from "../assets/avatar.png";
                             Python <span class="text-gray-600 mx-1">·</span>
                             n8n
                         </p>
+
+                        <!-- Mobile view (flex wrap for spacing) -->
+                        <div
+                            class="md:hidden flex flex-wrap justify-center gap-x-4 gap-y-3 text-base text-gray-400 font-mono mb-8"
+                        >
+                            <span>HTML</span>
+                            <span class="text-gray-600">·</span>
+                            <span>CSS</span>
+                            <span class="text-gray-600">·</span>
+                            <span>JavaScript</span>
+                            <span class="text-gray-600">·</span>
+                            <span>WordPress</span>
+                            <span class="text-gray-600">·</span>
+                            <span>Astro</span>
+                            <span class="text-gray-600">·</span>
+                            <span>Python</span>
+                            <span class="text-gray-600">·</span>
+                            <span>n8n</span>
+                        </div>
                     </div>
                 </div>
             </div>

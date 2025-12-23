@@ -24,7 +24,10 @@
                 >Proyectos</a
             >
         </div>
-        <button class="md:hidden text-gray-300 focus:outline-none">
+        <button
+            id="mobile-menu-btn"
+            class="md:hidden text-gray-300 focus:outline-none"
+        >
             <svg
                 class="w-6 h-6"
                 fill="none"
@@ -39,4 +42,36 @@
             </svg>
         </button>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-gray-950/95 backdrop-blur-md border-b border-gray-800"
+    >
+        <div class="container mx-auto px-6 py-4 flex flex-col space-y-4">
+            <a
+                href="#about"
+                class="text-gray-300 hover:text-white transition-colors"
+                onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+                >Sobre mí</a
+            >
+            <a
+                href="#projects"
+                class="text-gray-300 hover:text-white transition-colors"
+                onclick="document.getElementById('mobile-menu').classList.add('hidden')"
+                >Proyectos</a
+            >
+        </div>
+    </div>
 </header>
+
+<script>
+    const btn = document.getElementById("mobile-menu-btn");
+    const menu = document.getElementById("mobile-menu");
+
+    if (btn && menu) {
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    }
+</script>
