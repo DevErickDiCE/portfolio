@@ -30,7 +30,7 @@ export const PROJECTS = [
     title: "Chatbot IA & Reservas",
     description: "Gestión automatizada de citas vía WhatsApp con IA para resolución de dudas y reservas en tiempo real.",
     tags: ["Automatización", "WhatsApp API", "n8n", "OpenAI"],
-    link: "#",
+    link: "https://www.potenciasoluciones.com",
     image: "/images/potencia-ai.png",
     details: {
       problem: "Pérdida de clientes por falta de respuesta inmediata fuera de horario de oficina.",
@@ -42,7 +42,7 @@ export const PROJECTS = [
     title: "E-commerce de Moda",
     description: "Comercio electrónico escalable con filtrado avanzado, gestión de catálogo y pasarela de pagos.",
     tags: ["WooCommerce", "eCommerce", "Pasarelas de Pago"],
-    link: "#",
+    link: "https://maisonnatalie.es",
     image: "/images/maison-ecommerce.png",
     details: {
       problem: "Gestión de inventario caótica y baja tasa de conversión en dispositivos móviles.",
@@ -54,7 +54,7 @@ export const PROJECTS = [
     title: "Identidad Gastronómica",
     description: "Web corporativa con gestión de carta digital dinámica y optimización SEO local.",
     tags: ["WordPress", "SEO Local", "Diseño UI"],
-    link: "#",
+    link: "https://www.elladrillobar.es",
     image: "/images/el-ladrillo.png",
     details: {
       problem: "El menú en PDF era ilegible en móviles y el local no aparecía en búsquedas de Google.",
@@ -66,7 +66,7 @@ export const PROJECTS = [
     title: "Clínica Dental Integral",
     description: "Portal corporativo para centro de salud optimizado para captación de pacientes.",
     tags: ["Diseño Web", "UX Médico", "Responsive"],
-    link: "#",
+    link: "https://www.centroodontologicolm.com",
     image: "/images/dental-clinic.png",
     details: {
       problem: "Web anticuada que no transmitía la confianza ni la higiene necesaria para una clínica.",

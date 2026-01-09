@@ -47,10 +47,34 @@ const {
 
         <!-- Description -->
         <p
-            class="text-gray-500 text-base font-light leading-relaxed max-w-lg line-clamp-2 mb-8"
+            class="text-gray-500 text-base font-light leading-relaxed max-w-lg line-clamp-2 mb-6"
         >
             {description}
         </p>
+
+        <!-- Project Link -->
+        {
+            link && link !== "#" && (
+                <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-green-400 transition-colors duration-300 mb-8 group"
+                >
+                    <span>Ver proyecto</span>
+                    <svg
+                        class="w-4 h-4 transition-transform duration-300 group-hover:translate-x-1"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="1.5"
+                    >
+                        <path d="M5 12h14" />
+                        <path d="M12 5l7 7-7 7" />
+                    </svg>
+                </a>
+            )
+        }
 
         <!-- Expandable Case Study -->
         {
