@@ -63,11 +63,11 @@ export const PROJECTS = [
     },
   },
   {
-    title: "Thiasa - Reformas Integrales",
+    title: "Corporativa de Construcción",
     description: "Sitio web corporativo para empresa líder en reformas integrales en Madrid. Diseño enfocado en mostrar su portafolio de servicios y calidad de acabados.",
     tags: ["Diseño Web", "SEO Local", "Generación de Leads"],
     link: "https://thiasa.es",
-    image: "/images/thiasa.svg",
+    image: "/images/thiasa.png",
     details: {
       problem: "Necesidad de transmitir confianza y profesionalidad en un sector muy competitivo, además de captar clientes cualificados.",
       solution: "Web elegante y moderna que destaca los servicios clave (reformas, carpintería, instalaciones) con llamadas a la acción claras.",
