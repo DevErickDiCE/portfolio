@@ -63,15 +63,15 @@ export const PROJECTS = [
     },
   },
   {
-    title: "Clínica Dental Integral",
-    description: "Portal corporativo para centro de salud optimizado para captación de pacientes.",
-    tags: ["Diseño Web", "UX Médico", "Responsive"],
-    link: "https://www.centroodontologicolm.com",
-    image: "/images/dental-clinic.png",
+    title: "Thiasa - Reformas Integrales",
+    description: "Sitio web corporativo para empresa líder en reformas integrales en Madrid. Diseño enfocado en mostrar su portafolio de servicios y calidad de acabados.",
+    tags: ["Diseño Web", "SEO Local", "Generación de Leads"],
+    link: "https://thiasa.es",
+    image: "/images/thiasa.svg",
     details: {
-      problem: "Web anticuada que no transmitía la confianza ni la higiene necesaria para una clínica.",
-      solution: "Rediseño completo enfocado en UX médico, claridad de servicios y testimonios.",
-      result: "Mayor captación de pacientes y percepción de marca premium.",
+      problem: "Necesidad de transmitir confianza y profesionalidad en un sector muy competitivo, además de captar clientes cualificados.",
+      solution: "Web elegante y moderna que destaca los servicios clave (reformas, carpintería, instalaciones) con llamadas a la acción claras.",
+      result: "Mejora de la imagen de marca digital y aumento en las solicitudes de presupuesto a través de la web.",
     },
   },
 ];
