@@ -74,4 +74,16 @@ export const PROJECTS = [
       result: "Mejora de la imagen de marca digital y aumento en las solicitudes de presupuesto a través de la web.",
     },
   },
+  {
+    title: "Carta Digital Gastronómica",
+    description: "Carta digital interactiva para pizzería italiana con diseño inmersivo, galería de productos y sistema de reservas integrado.",
+    tags: ["Next.js", "Diseño UI", "Carta Digital", "SEO Local"],
+    link: "https://www.autenticapizzamesondelboalo.es/",
+    image: "/images/pizza-italiana.png",
+    details: {
+      problem: "Carta en formato físico sin presencia digital. Los clientes no podían consultar el menú antes de visitar el local.",
+      solution: "Carta digital con diseño premium e inmersivo que refleja la identidad italiana del restaurante, con navegación intuitiva y acceso directo a reservas.",
+      result: "Mayor visibilidad online y una experiencia de usuario que transmite la esencia del restaurante antes de la primera visita.",
+    },
+  },
 ];
