@@ -75,16 +75,4 @@ export const PROJECTS = [
       result: "Canal digital propio para mostrar productos, vender online y centralizar el catálogo del negocio.",
     },
   },
-  {
-    title: "Automatización de inventario",
-    description: "Sistema de inventario automatizado para consultar stock, registrar movimientos y generar reportes desde Telegram conectado con Google Sheets.",
-    tags: ["n8n", "Telegram", "Google Sheets", "Automatización interna"],
-    link: "",
-    image: "/images/dashboard.png",
-    details: {
-      problem: "La gestión manual del inventario consumía tiempo y podía generar errores al consultar o actualizar productos.",
-      solution: "Bot conectado a una hoja de cálculo para buscar productos, registrar entradas y salidas, consultar stock y generar reportes.",
-      result: "Proceso interno más rápido, accesible desde el móvil y con menos dependencia de tareas manuales repetitivas.",
-    },
-  },
 ];
