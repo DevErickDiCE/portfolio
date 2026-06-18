@@ -3,20 +3,18 @@ import { SITE_CONFIG } from "../config";
 ---
 
 <footer class="bg-gray-950 pt-0 pb-8">
-    <div class="container mx-auto px-6 flex flex-col items-center gap-8">
-        <!-- Estado profesional -->
-        <div
-            class="flex items-center gap-3 bg-white/5 py-1.5 px-4 rounded-full border border-white/5"
-        >
-            <span
-                class="w-2 h-2 rounded-full bg-emerald-400 shadow-[0_0_8px_rgba(52,211,153,0.5)]"
-            ></span>
-            <span class="text-gray-300 text-sm font-medium tracking-wide">
-                Disponible para nuevos proyectos
-            </span>
+    <div class="container mx-auto px-6 flex flex-col items-center gap-6">
+        <p class="text-sm text-gray-500 font-mono tracking-wide">
+            Erick Piñerua
+        </p>
+        <p class="text-xs text-gray-600 font-mono tracking-wider">
+            Desarrollo web · Automatización · IA aplicada · Soporte técnico
+        </p>
+
+        <div class="text-xs text-gray-600">
+            Madrid, España
         </div>
 
-        <!-- Contacto principal -->
         <div
             class="flex items-center gap-8 text-white/90 font-medium text-lg tracking-wide"
         >
@@ -44,12 +42,11 @@ import { SITE_CONFIG } from "../config";
             </a>
         </div>
 
-        <!-- Texto legal -->
         <p
             class="text-gray-600/60 text-xs font-medium tracking-widest mt-4 uppercase"
         >
             &copy; {new Date().getFullYear()}
-            {SITE_CONFIG.author} — Desarrollo web
+            {SITE_CONFIG.author} — Desarrollo web · Automatización · IA aplicada
         </p>
     </div>
 </footer>
