@@ -44,7 +44,7 @@ export const PROJECTS = [
     description: "Web corporativa y catálogo consultivo para una empresa especializada en aerotermia, fotovoltaica y geotermia, diseñada para explicar soluciones técnicas con claridad y captar solicitudes de asesoramiento.",
     tags: ["Next.js", "Web corporativa", "Catálogo", "SEO", "Captación de leads"],
     link: "https://maclimasolucionesenergeticas.com",
-    image: "/images/maclima.jpg",
+    image: "/images/maclima.png",
     details: {
       problem: "La empresa necesitaba presentar servicios y equipos técnicos de forma comprensible, reforzar su posicionamiento profesional y convertir las visitas en consultas cualificadas.",
       solution: "Desarrollo de una web en Next.js con páginas específicas por solución, catálogo consultivo, blog, formularios de contacto y llamadas a la acción orientadas al asesoramiento personalizado.",
