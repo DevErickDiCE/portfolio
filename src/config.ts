@@ -40,15 +40,15 @@ export const PROJECTS = [
     },
   },
   {
-    title: "Web corporativa para empresa de reformas",
-    description: "Web profesional para una empresa de reformas, enfocada en transmitir confianza, explicar servicios y facilitar solicitudes de presupuesto.",
-    tags: ["WordPress", "Web corporativa", "SEO local", "Captación de presupuestos"],
-    link: "https://thiasa.es",
-    image: "/images/thiasa.png",
+    title: "Maclima — Soluciones energéticas",
+    description: "Web corporativa y catálogo consultivo para una empresa especializada en aerotermia, fotovoltaica y geotermia, diseñada para explicar soluciones técnicas con claridad y captar solicitudes de asesoramiento.",
+    tags: ["Next.js", "Web corporativa", "Catálogo", "SEO", "Captación de leads"],
+    link: "https://maclimasolucionesenergeticas.com",
+    image: "/images/maclima.jpg",
     details: {
-      problem: "La empresa necesitaba una presencia digital más clara y profesional para competir en un sector donde la confianza visual y la información bien presentada son claves.",
-      solution: "Web corporativa con estructura clara, servicios definidos, llamadas a la acción y enfoque en SEO local básico.",
-      result: "Imagen digital más profesional y una base sólida para captar clientes desde Google, enlaces directos y recomendaciones.",
+      problem: "La empresa necesitaba presentar servicios y equipos técnicos de forma comprensible, reforzar su posicionamiento profesional y convertir las visitas en consultas cualificadas.",
+      solution: "Desarrollo de una web en Next.js con páginas específicas por solución, catálogo consultivo, blog, formularios de contacto y llamadas a la acción orientadas al asesoramiento personalizado.",
+      result: "Una presencia digital clara, rápida y escalable que centraliza la oferta de Maclima y facilita la captación de clientes interesados en mejorar la eficiencia energética de su vivienda o negocio.",
     },
   },
   {
